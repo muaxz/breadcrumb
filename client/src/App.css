@@ -1,0 +1,13 @@
+.crumpHolderUl{
+  display: flex;
+  list-style: none;
+}
+
+
+
+.crumpHolderUl li{
+  margin-left: 10px;
+  cursor: pointer;
+  color: red;
+  padding: 5px;
+}
