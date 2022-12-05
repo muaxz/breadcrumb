@@ -15,7 +15,7 @@ app.get("/:mypath",(req,res,next)=>{
     
   
     fs.readdir(path.join(__dirname,...pathArray),(err,data)=>{
-        console.log(path.join(__dirname,...pathArray));
+     
         if(data != undefined){ //checking whether this is a file or a folder
            return res.json({state:"folder",data:data});
         }else{

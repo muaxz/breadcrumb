@@ -57,7 +57,7 @@ export default function Breadcrump(){
         <div>
             <ul className="crumpHolderUl">
                 {crumps.map((crump,index)=>{
-                    return <li key={index} onClick={()=>selectPath(false,crump)} style={{color:selectedPathIndex == crump ? "grey" : "red"}}>{crump} {index == crumps.length-1 ? "" : <span style={{color:"black",paddingLeft:"10px"}}>{">"}</span>}</li>
+                    return <li key={index} onClick={()=>selectPath(false,crump)} style={{color:selectedPathIndex == crump ? "grey" : "#e63946"}}>{crump} {index == crumps.length-1 ? "" : <span style={{color:"black",paddingLeft:"10px"}}>{">"}</span>}</li>
                 })}
             </ul>
             <div style={{paddingLeft:"50px"}}>
